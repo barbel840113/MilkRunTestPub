@@ -1,0 +1,11 @@
+version: '3.4'
+
+services:
+  milkrun.api:
+    image: ${DOCKER_REGISTRY-}milkrunapi
+    build:
+      context: .
+      dockerfile: MilkRun.Api/Dockerfile
+
+# add ms sql
+

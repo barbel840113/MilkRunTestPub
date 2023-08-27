@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34009.444
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MilkRun.Api", "MilkRun.Api\MilkRun.Api.csproj", "{F633DFED-F455-4AE5-AFED-C170E0462021}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MilkRun.ApplicationCore", "MilkRun.ApplicationCore\MilkRun.ApplicationCore.csproj", "{10BC9BBB-469B-4651-9175-C7C64F76FE6C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MilkRun.Infrastructure", "MilkRun.Infrastructure\MilkRun.Infrastructure.csproj", "{46288FBD-2B94-434A-AB91-A6FC5264A6CE}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{38D7B10A-3EDB-4F44-A294-08FF4907B97C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F633DFED-F455-4AE5-AFED-C170E0462021}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F633DFED-F455-4AE5-AFED-C170E0462021}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F633DFED-F455-4AE5-AFED-C170E0462021}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F633DFED-F455-4AE5-AFED-C170E0462021}.Release|Any CPU.Build.0 = Release|Any CPU
+		{10BC9BBB-469B-4651-9175-C7C64F76FE6C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{10BC9BBB-469B-4651-9175-C7C64F76FE6C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{10BC9BBB-469B-4651-9175-C7C64F76FE6C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{10BC9BBB-469B-4651-9175-C7C64F76FE6C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{46288FBD-2B94-434A-AB91-A6FC5264A6CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{46288FBD-2B94-434A-AB91-A6FC5264A6CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{46288FBD-2B94-434A-AB91-A6FC5264A6CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{46288FBD-2B94-434A-AB91-A6FC5264A6CE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{38D7B10A-3EDB-4F44-A294-08FF4907B97C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{38D7B10A-3EDB-4F44-A294-08FF4907B97C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{38D7B10A-3EDB-4F44-A294-08FF4907B97C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{38D7B10A-3EDB-4F44-A294-08FF4907B97C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {887AF7C2-037E-4C7C-BC7F-A41EA7187A8A}
+	EndGlobalSection
+EndGlobal

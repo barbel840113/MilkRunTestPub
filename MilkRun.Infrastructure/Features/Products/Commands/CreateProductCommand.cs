@@ -10,6 +10,8 @@ using MilkRun.ApplicationCore.Models;
 using MilkRun.Infrastructure.Repositories;
 namespace MilkRun.Infrastructure.Features.Products.Commands
 {
+
+
     public class CreateProductCommand : IRequest<ApiResult<ProductViewModel>>
     {
         public string Title { get; set; }

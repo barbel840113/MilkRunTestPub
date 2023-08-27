@@ -11,6 +11,8 @@ using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using MilkRun.Infrastructure.Repositories;
+using MilkRun.Infrastructure.Features.Products.Commands;
+using MilkRun.Infrastructure.Pipelines;
 
 namespace MilkRun.Infrastructure
 {
@@ -19,12 +21,13 @@ namespace MilkRun.Infrastructure
         public static void AddInfrastrcutureServices(this IServiceCollection services)
         {
             services.AddValidatorsFromAssembly(Assembly.GetExecutingAssembly());
-            //services.AddMediatR(Assembly.GetExecutingAssembly());
-            services.AddAutoMapper(Assembly.GetExecutingAssembly());
-            services.AddTransient(typeof(IPipelineBehavior<,>), typeof(ValidationBehavior<,>));
+            services.AddMediatR(cfg => cfg.RegisterServicesFromAssembly(typeof(CreateProductCommand).Assembly));
+            services.AddTransient(typeof(IPipelineBehavior<,>), typeof(LoggingBehaviour<,>));
+            services.AddTransient(typeof(IPipelineBehavior<,>), typeof(ValidatorBehaviour<,>));
+            services.AddAutoMapper(Assembly.GetExecutingAssembly());          
             services.AddScoped(typeof(IGenericRepositoryAsync<>), typeof(GenericRepositoryAsync<>));
             services.AddScoped<IProductRepository, ProductRepository>();
-            
+            services.AddTransient<IJsonRepository, JsonRepository>();
         }       
     }
 }

@@ -7,8 +7,19 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="test_products.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="test_products.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
     <Folder Include="Mapping\Profiles\" />
-    <Folder Include="Pipelines\" />
   </ItemGroup>
 
   <ItemGroup>
